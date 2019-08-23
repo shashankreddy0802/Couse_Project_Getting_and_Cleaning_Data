@@ -1,9 +1,8 @@
-# Couse Project - Getting and Cleaning Data
+Couse Project - Getting and Cleaning Data
 
-# The script is pretty straightforward. I've followed the 5 stpes listed on the project description.
+The script is pretty straightforward. I've followed the 5 stpes listed on the project description.
 
-# 1. I've merged the training and the test sets to create one data set. During this step, I've also cleaned the data and transformed
-# the resulting vector into a dataframe. I've used the command "cbind" to bind the columns and "rbind" to  bind the rows. 
+1. I've merged the training and the test sets to create one data set. During this step, I've also cleaned the data and transformed the resulting vector into a dataframe. I've used the command "cbind" to bind the columns and "rbind" to  bind the rows. 
 
 # 2. I've extracted only the measurements on the mean and standard deviation for the first three measurements.
 # Obs: in order for the dataframe not to get too heavy, I've selected only the first 3 variables (tBodyAcc, tGravityAcc, 
