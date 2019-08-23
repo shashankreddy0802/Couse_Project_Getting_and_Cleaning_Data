@@ -1,31 +1,20 @@
 Variables:
+---------
+test1: downloaded test set (2947 observations x 561 variables)
+test2: downloaded test labels (2947 observations). Each row identifies the activity performed by the subject. It ranges from 1 to 6.
+test3: downloaded subject test (2947 observations). Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+train1: downloaded train test (7352 observations x 561 variables)
+train2: downloaded train labels (7352 observations). Each row identifies the activity performed by the subject. It ranges from 1 to 6.
+train3: downloaded subject train (7352 observations). Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-tBodyAcc-XYZ:
+Activity labels from test2 and train2:
+1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, and 6 LAYING.
 
-1 tBodyAcc-mean()-X
-2 tBodyAcc-mean()-Y
-3 tBodyAcc-mean()-Z
-4 tBodyAcc-std()-X
-5 tBodyAcc-std()-Y
-6 tBodyAcc-std()-Z
+df_test: test1, test2, and test3 were "column binded", resulting in a dataframe with dim: 2947 observations x 563 variables.
+df_train: train1, train2, and train3 were "column binded", resulting in a dataframe with dim: 7352 observations x 563 variables.
+df: df_test and df_train were "row binded", resulting in a dataframe with dim: 10299 observations x 563 variables.
 
-tGravityAcc-XYZ:
+df_mean_sd: a dataframe with dim: 10299 observations x 20 variables. From df, I've selected only 20 columns, which represented only the mean and standart deviation from the first 3 variables, and also "activity" and "subject", as listed below:
+"tBodyAcc-mean()-X", "tBodyAcc-mean()-Y", "tBodyAcc-mean()-Z", "tBodyAcc-std()-X", "tBodyAcc-std()-Y", "tBodyAcc-std()-Z", "tGravityAcc-mean()-X", "tGravityAcc-mean()-Y", "tGravityAcc-mean()-Z", "tGravityAcc-std()-X", "tGravityAcc-std()-Y", "tGravityAcc-std()-Z", "tBodyAccJerk-mean()-X", "tBodyAccJerk-mean()-Y", "tBodyAccJerk-mean()-Z", "tBodyAccJerk-std()-X", "tBodyAccJerk-std()-Y", "tBodyAccJerk-std()-Z", "activity", "subject".
 
-41 tGravityAcc-mean()-X
-42 tGravityAcc-mean()-Y
-43 tGravityAcc-mean()-Z
-44 tGravityAcc-std()-X
-45 tGravityAcc-std()-Y
-46 tGravityAcc-std()-Z
-
-tBodyAccJerk-XYZ:
-
-81 tBodyAccJerk-mean()-X
-82 tBodyAccJerk-mean()-Y
-83 tBodyAccJerk-mean()-Z
-84 tBodyAccJerk-std()-X
-85 tBodyAccJerk-std()-Y
-86 tBodyAccJerk-std()-Z
-
-mean(): Mean value
-std(): Standard deviation
+tidy_df: the tidy dataframe, cointaining 180 observations and 8 variables. The independent tidy data set has the average of each variable for each activity and each subject.
