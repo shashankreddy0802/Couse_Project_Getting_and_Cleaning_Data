@@ -1,4 +1,4 @@
-# Couse_Project_Getting_and_Cleaning_Data
+# Couse Project - Getting and Cleaning Data
 
 # The script is pretty straightforward. I've followed the 5 stpes listed on the project description.
 
