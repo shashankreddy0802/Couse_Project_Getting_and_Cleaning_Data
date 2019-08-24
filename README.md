@@ -1,6 +1,6 @@
 ## Couse Project - Getting and Cleaning Data
 
-### Files content
+## Files content
 
 This repository cointains three files:
 1. `CodeBook`: lists the variables and observations of each variable.
