@@ -1,5 +1,5 @@
 ## Couse Project - Getting and Cleaning Data
-======
+
 ### Files content
 ======
 This repository cointains three files:
