@@ -1,4 +1,4 @@
-## Couse Project - Getting and Cleaning Data
+# Couse Project - Getting and Cleaning Data
 
 ## Files content
 
@@ -7,7 +7,7 @@ This repository cointains three files:
 2. `run_analysis.R`: the script used to transform a raw dataset into a tidy one.
 3. `README.md`: explain the project, files content, and code explanation.
 
-### Code explanation:
+## Code explanation:
 
 The script is pretty straightforward. I've followed the 5 stpes listed on the project description.
 1. I've merged the training and the test sets to create one data set. During this step, I've also cleaned the data and transformed the resulting vector into a dataframe. I've used the command "cbind" to bind the columns and "rbind" to  bind the rows. 
